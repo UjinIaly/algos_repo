@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/iwaly/CLionProjects/algos_6/cmake-build-debug/
+cmake_ninja_workdir = /home/iwaly/algos_repo/algos_6/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target algos_6
 
@@ -49,7 +49,7 @@ cmake_ninja_workdir = /home/iwaly/CLionProjects/algos_6/cmake-build-debug/
 
 build cmake_object_order_depends_target_algos_6: phony || CMakeFiles/algos_6.dir
 
-build CMakeFiles/algos_6.dir/main.cpp.o: CXX_COMPILER__algos_6_Debug /home/iwaly/CLionProjects/algos_6/main.cpp || cmake_object_order_depends_target_algos_6
+build CMakeFiles/algos_6.dir/main.cpp.o: CXX_COMPILER__algos_6_Debug /home/iwaly/algos_repo/algos_6/main.cpp || cmake_object_order_depends_target_algos_6
   DEP_FILE = CMakeFiles/algos_6.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++14
   OBJECT_DIR = CMakeFiles/algos_6.dir
@@ -79,7 +79,7 @@ build algos_6: CXX_EXECUTABLE_LINKER__algos_6_Debug CMakeFiles/algos_6.dir/main.
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/iwaly/CLionProjects/algos_6/cmake-build-debug && /snap/clion/209/bin/cmake/linux/bin/ccmake -S/home/iwaly/CLionProjects/algos_6 -B/home/iwaly/CLionProjects/algos_6/cmake-build-debug
+  COMMAND = cd /home/iwaly/algos_repo/algos_6/cmake-build-debug && /snap/clion/209/bin/cmake/linux/bin/ccmake -S/home/iwaly/algos_repo/algos_6 -B/home/iwaly/algos_repo/algos_6/cmake-build-debug
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -91,7 +91,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/iwaly/CLionProjects/algos_6/cmake-build-debug && /snap/clion/209/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/iwaly/CLionProjects/algos_6 -B/home/iwaly/CLionProjects/algos_6/cmake-build-debug
+  COMMAND = cd /home/iwaly/algos_repo/algos_6/cmake-build-debug && /snap/clion/209/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/iwaly/algos_repo/algos_6 -B/home/iwaly/algos_repo/algos_6/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -107,7 +107,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /home/iwaly/CLionProjects/algos_6/cmake-build-debug
+# Folder: /home/iwaly/algos_repo/algos_6/cmake-build-debug
 
 build all: phony algos_6
 

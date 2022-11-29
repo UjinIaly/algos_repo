@@ -3,7 +3,8 @@
 
 #include <iostream>
 
-int partition(int *buffer, int begin, int end){
+template <class T,class Comp = std::less<T>>
+int partition(T *buffer, int begin, int end,Comp comp = Comp()){
     if (end == begin)
         return 0;
     int pos = (begin+(random()%(end-begin)));
@@ -14,7 +15,7 @@ int partition(int *buffer, int begin, int end){
 
     std::swap(buffer[pos], buffer[end - 1]);
     while (j != end - 1){
-        if (pivot< buffer[j]){
+        if (comp(pivot,buffer[j])){
             j++;
         } else{
             std::swap(buffer[i], buffer[j]);
@@ -25,15 +26,15 @@ int partition(int *buffer, int begin, int end){
     std::swap(buffer[end - 1], buffer[i]);
     return i;
 }
-
-int statistics(int *buffer, size_t size, int k){
+template <class T,class Comp = std::less<T>>
+int statistics(T *buffer, size_t size, int k,Comp comp = Comp()){
     int begin = 0;
     int end = (int)size;
 
     while (true){
         int pivot = partition(buffer, begin, end);
         if (pivot == k) return buffer[k];
-        else if(pivot < k) begin = pivot + 1;
+        else if(comp(pivot,k)) begin = pivot + 1;
         else end = pivot;
     }
 }

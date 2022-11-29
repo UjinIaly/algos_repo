@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/iwaly/CLionProjects/algos_6/cmake-build-debug"
+			"value" : "/home/iwaly/algos_repo/algos_6/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -591,7 +591,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/iwaly/CLionProjects/algos_6"
+			"value" : "/home/iwaly/algos_repo/algos_6"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1123,7 +1123,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/iwaly/CLionProjects/algos_6/cmake-build-debug"
+			"value" : "/home/iwaly/algos_repo/algos_6/cmake-build-debug"
 		},
 		{
 			"name" : "algos_6_IS_TOP_LEVEL",
@@ -1147,7 +1147,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/iwaly/CLionProjects/algos_6"
+			"value" : "/home/iwaly/algos_repo/algos_6"
 		}
 	],
 	"kind" : "cache",
