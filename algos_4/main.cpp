@@ -3,14 +3,22 @@
 struct User{
     int id;
     int count;
-    bool operator< (User& _user){
-        return(count<_user.count);
+    bool operator< (const User& _user)const{
+        return(this->count<_user.count);
     }
-    bool operator> (User& _user){
-        return(count>_user.count);
+    bool operator> (const User& _user)const{
+        return(this->count>_user.count);
     }
 };
-template <class T>
+
+template<class T>
+struct comparator{
+    bool operator() (const T& first,const T& second){
+        return first>second;
+    }
+};
+
+template <class T,class Comp = comparator<T>>
 class Heap{
 private:
     T* buffer;
@@ -19,23 +27,25 @@ private:
     void sift_up(size_t index);
     void sift_down(size_t index);
     void increase();
+    Comp comp;
 public:
-    Heap():heap_size(0),capacity(4){
+    Heap(Comp comp = Comp()):heap_size(0),capacity(4){
         buffer = new T[capacity];
+        this->comp = comp;
     }
-    void push(T _user);
+    void push(const T &_user);
     void pop();
     T top();
 };
 
-template<class T>
-void Heap<T>::push(T _user){
+template<class T,class Comp>
+void Heap<T,Comp>::push(const T &_user){
     buffer[++heap_size] = _user;
     sift_up(heap_size);
 }
 
-template<class T>
-void Heap<T>::increase() {
+template<class T,class Comp>
+void Heap<T,Comp>::increase() {
     capacity*=2;
     T temp[capacity];
     for(size_t i = 0;i<heap_size;++i){
@@ -45,62 +55,43 @@ void Heap<T>::increase() {
 }
 
 
-template<class T>
-void Heap<T>::sift_up(size_t index) {
+template<class T,class Comp>
+void Heap<T,Comp>::sift_up(size_t index) {
     size_t parent;
     parent = index / 2;
     if( parent == 0 )return;
-    if(buffer[parent].count > buffer[index].count) {
+    if(comp(buffer[parent],buffer[index])) {
         std::swap(buffer[parent],buffer[index]);
         sift_up(parent);
     }
 }
 
-template <class T>
-void Heap<T>::sift_down(size_t index) {
+template <class T, class Comp>
+void Heap<T,Comp>::sift_down(size_t index) {
     size_t child;
     child = 2*index;
     if( child > heap_size ) return;
-    if( child+1 <= heap_size && buffer[child + 1].count < buffer[child].count ) ++child;
+    if( child+1 <= heap_size && comp(buffer[child],buffer[child+1]) ) ++child;
 
-    if( buffer[child].count < buffer[index].count ) {
+    if( comp(buffer[index],buffer[child]) ) {
         std::swap(buffer[child],buffer[index]);
         sift_down(child);
     }
 };
 
-template<class T>
-void Heap<T>::pop(){
+template<class T, class Comp>
+void Heap<T, Comp>::pop(){
     if(heap_size==0) return;
     buffer[1] = buffer[heap_size--];
     sift_down(1);
 }
 
-template<class T>
-T Heap<T>::top(){
+template<class T, class Comp>
+T Heap<T, Comp>::top(){
     return buffer[1];
 }
 
 int main(){
-    /*
-    int id[]={1,2,3,4,5,6,7,};
-    int count[]={2,7,4,6,9,5,3};
-    User user[7];
-    for(size_t  i = 0;i<7;++i){
-        user[i].id = id[i];
-        user[i].count = count[i];
-        std::cout<<user[i].id<<" "<<user[i].count<<std::endl;
-    }
-    Heap<User> heap;
-    for(size_t i = 0;i<7;++i){
-        heap.push(user[i]);
-    }
-    for(size_t  i = 0;i<7;++i){
-        std::cout<<heap.top().count;
-        heap.pop();
-    }
-     */
-
     int id_count;
     int visits;
     std::cin >>id_count>>visits;

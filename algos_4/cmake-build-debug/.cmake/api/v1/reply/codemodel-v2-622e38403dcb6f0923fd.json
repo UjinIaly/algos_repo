@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/iwaly/CLionProjects/algos_4/cmake-build-debug",
-		"source" : "/home/iwaly/CLionProjects/algos_4"
+		"build" : "/home/iwaly/algos_repo/algos_4/cmake-build-debug",
+		"source" : "/home/iwaly/algos_repo/algos_4"
 	},
 	"version" : 
 	{
