@@ -1,3 +1,0 @@
-/home/iwaly/algos_repo/algos_4/cmake-build-debug/CMakeFiles/algos_3.dir
-/home/iwaly/algos_repo/algos_4/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/iwaly/algos_repo/algos_4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

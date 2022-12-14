@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/iwaly/algos_repo/algos_4/cmake-build-debug"
+			"value" : "/home/iwaly/algos_repo/algos4/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/iwaly/algos_repo/algos_4/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/iwaly/algos_repo/algos4/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -603,7 +603,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/iwaly/algos_repo/algos_4"
+			"value" : "/home/iwaly/algos_repo/algos4"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -843,7 +843,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "algos_3"
+			"value" : "algos4"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1138,7 +1138,7 @@
 			"value" : "TRUE"
 		},
 		{
-			"name" : "algos_3_BINARY_DIR",
+			"name" : "algos4_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1147,10 +1147,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/iwaly/algos_repo/algos_4/cmake-build-debug"
+			"value" : "/home/iwaly/algos_repo/algos4/cmake-build-debug"
 		},
 		{
-			"name" : "algos_3_IS_TOP_LEVEL",
+			"name" : "algos4_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1162,7 +1162,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "algos_3_SOURCE_DIR",
+			"name" : "algos4_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1171,7 +1171,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/iwaly/algos_repo/algos_4"
+			"value" : "/home/iwaly/algos_repo/algos4"
 		}
 	],
 	"kind" : "cache",

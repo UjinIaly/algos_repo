@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "algos_3"
+			"path" : "algos4"
 		}
 	],
 	"backtrace" : 1,
@@ -53,7 +53,7 @@
 			]
 		}
 	],
-	"id" : "algos_3::@6890427a1f51a3e7e1df",
+	"id" : "algos4::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -69,8 +69,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "algos_3",
-	"nameOnDisk" : "algos_3",
+	"name" : "algos4",
+	"nameOnDisk" : "algos4",
 	"paths" : 
 	{
 		"build" : ".",
