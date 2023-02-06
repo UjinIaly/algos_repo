@@ -1,0 +1,3 @@
+/home/iwaly/CLionProjects/algos.2/cmake-build-debug/CMakeFiles/algos_2.dir
+/home/iwaly/CLionProjects/algos.2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/iwaly/CLionProjects/algos.2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
